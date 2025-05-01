@@ -2,7 +2,7 @@
 
 # ============ NetIntel Security Suite™ ============ #
 # Developed by Ahmed Ibrahim — Cybersecurity Developer
-# Version: 1.3
+# Version: 1.2
 # ================================================ #
 
 # 🎨 Color codes
