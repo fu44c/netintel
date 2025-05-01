@@ -52,7 +52,7 @@ chmod +x netintel.sh
 ```
 
 ## 📄 Example Output
-yaml
+```yaml
 🔐 NetIntel Report
 Developed by: Ahmed Ibrahim
 Domain: example.com
@@ -64,7 +64,7 @@ CIDR Blocks:
 
 Reverse DNS Results:
 ➡️ 93.184.216.34 → edge.example.com
-
+```
 
 👨‍💻 Author
 Ahmed Ibrahim
