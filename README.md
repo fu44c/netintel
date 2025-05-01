@@ -1,66 +1,35 @@
-# NetIntel Security Suite™ 🔐
+# 🔐 NetIntel Security Suite™
 
-A Bash-based OSINT tool that collects intelligence on a given domain name by resolving it to its IP, retrieving the ASN, collecting CIDR ranges, and performing reverse DNS (PTR) lookups.
+> Developed by **Ahmed Ibrahim** – Cybersecurity Developer  
+> Version: `v1.0`
 
----
-
-## 🛠 Features
-
-- 🌍 Domain → IP
-- 📡 IP → ASN
-- 🧱 ASN → CIDRs
-- 🔁 CIDRs → PTR (Reverse DNS)
-- 🧾 Optional saving of full reports
-- 🎨 Colorful and user-friendly terminal UI
+NetIntel is a Bash-based tool designed to streamline network intelligence gathering. Starting with a domain, it automatically resolves the IP, extracts ASN information, gathers associated CIDR blocks, performs reverse DNS lookups, and optionally saves the results into a clean report.
 
 ---
 
-## ⚙️ Requirements
+## 🧰 Features
 
-Make sure the following tools are installed:
+- 🌐 **Domain to IP** Resolution
+- 🛰️ **ASN Lookup** (via RADb + fallback to BGPView)
+- 📡 **CIDR Block Extraction**
+- 🔄 **Reverse DNS Lookup** using `mapcidr` + `dnsx`
+- 💾 **Optional Report Saving**
 
-- [`dig`](https://linux.die.net/man/1/dig)
-- [`whois`](https://linux.die.net/man/1/whois)
-- [`curl`](https://curl.se/)
-- [`jq`](https://stedolan.github.io/jq/)
-- [`mapcidr`](https://github.com/projectdiscovery/mapcidr)
-- [`dnsx`](https://github.com/projectdiscovery/dnsx)
+---
 
-### 📦 Install required tools (Debian/Ubuntu-based systems):
+## ⚙️ Installation
 
+### 📦 Required Dependencies
+
+| Tool     | Install Command                                     |
+|----------|-----------------------------------------------------|
+| `dig`    | Usually pre-installed (`bind-utils` / `dnsutils`)   |
+| `whois`  | `sudo apt install whois` or `sudo pacman -S whois`  |
+| `curl`   | `sudo apt install curl`                             |
+| `jq`     | `sudo apt install jq`                               |
+| `mapcidr`| `go install github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest` |
+| `dnsx`   | `go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest` |
+
+> ☑️ Make sure **Go** is installed for `mapcidr` and `dnsx`:
 ```bash
-sudo apt update
-sudo apt install -y dnsutils whois curl jq
-
-# Install mapcidr and dnsx from ProjectDiscovery:
-GO111MODULE=on go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest
-GO111MODULE=on go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-
-# Make sure GOPATH is in your PATH:
-export PATH=$PATH:$(go env GOPATH)/bin
-```
-
-## 🚀 Usage
-```
-chmod +x netintel.sh
-
-# Run with domain directly:
-./netintel.sh -u example.com
-
-# Or run and enter domain manually:
-./netintel.sh
-
-# Help:
-./netintel.sh --help
-```
-## 📁 Example Output
-
-*🔍 Resolving IP address for domain...
-*✅ IP Resolved: 93.184.216.34
-*🔍 Retrieving ASN for IP...
-*✅ ASN Found: AS15133
-*📡 Looking up CIDR ranges for ASN...
-*✅ CIDRs retrieved:
-*93.184.216.0/24
-*🔄 Performing PTR lookups...
-
+sudo apt install golang -y
