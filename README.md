@@ -9,6 +9,8 @@ NetIntel is a Bash-based tool designed to streamline network intelligence gather
 
 ## 🧰 Features
 
+![NetIntel Demo](assets/screenshot1.png)
+
 - 🌐 **Domain to IP** Resolution  
 - 🛰️ **ASN Lookup** (via RADb + fallback to BGPView)  
 - 📡 **CIDR Block Extraction**  
