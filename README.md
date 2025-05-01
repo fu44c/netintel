@@ -30,21 +30,6 @@ NetIntel is a Bash-based tool designed to streamline network intelligence gather
 | mapcidr  | `go install github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest` |
 | dnsx     | `go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest` |
 
-> ☑️ Make sure **Go** is installed for mapcidr and dnsx:
-```bash
-sudo apt install golang -y
-
-```
-
-#### Then add this to your .bashrc or .zshrc:
-```bash
-export PATH=$PATH:$(go env GOPATH)/bin
-```
-
-#### Reload shell:
-```bash
-source ~/.bashrc
-```
 
 ## 🚀 Usage
 ```bash
