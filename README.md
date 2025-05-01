@@ -52,7 +52,7 @@ chmod +x netintel.sh
 ```
 
 ## 📄 Example Output
-yaml
+```yaml
 🔐 NetIntel Report
 Developed by: Ahmed Ibrahim
 Domain: example.com
