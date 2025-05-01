@@ -18,7 +18,7 @@ NetIntel is a Bash-based tool designed to streamline network intelligence gather
                                                     N E T I N T E L ™
                                     ╔══════════════════════════════════════════════════╗
                                     ║         🔐 NetIntel Security Suite™              ║
-                                    ║      Developed by Ahmed Ibrahim | v1.3           ║
+                                    ║      Developed by Ahmed Ibrahim | v1.2           ║
                                     ║       Domain → IP → ASN → CIDRs → PTR            ║
                                     ╚══════════════════════════════════════════════════╝
                                     Usage: ./netintel.sh [-u domain.com]
