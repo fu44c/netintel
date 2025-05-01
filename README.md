@@ -9,23 +9,23 @@ NetIntel is a Bash-based tool designed to streamline network intelligence gather
 
 ## 🧰 Features
 
-                                             _   _      _   _      _       
-                                            | \ | | ___| |_| |_ __| |_ ___ 
-                                            |  \| |/ _ \ __| __/ _` | / __|
-                                            | |\  |  __/ |_| || (_| | \__ \
-                                            |_| \_|\___|\__|\__\__,_|_|___/
+#####         _   _      _   _      _       
+#####        | \ | | ___| |_| |_ __| |_ ___ 
+#####        |  \| |/ _ \ __| __/ _` | / __|
+#####        | |\  |  __/ |_| || (_| | \__ \
+#####        |_| \_|\___|\__|\__\__,_|_|___/
                   
-                                                    N E T I N T E L ™
-                                    ╔══════════════════════════════════════════════════╗
-                                    ║         🔐 NetIntel Security Suite™              ║
-                                    ║      Developed by Ahmed Ibrahim | v1.2           ║
-                                    ║       Domain → IP → ASN → CIDRs → PTR            ║
-                                    ╚══════════════════════════════════════════════════╝
-                                    Usage: ./netintel.sh [-u domain.com]
+#####               N E T I N T E L ™
+##### ╔══════════════════════════════════════════════════╗
+##### ║         🔐 NetIntel Security Suite™              ║
+##### ║      Developed by Ahmed Ibrahim | v1.2           ║
+##### ║       Domain → IP → ASN → CIDRs → PTR            ║
+##### ╚══════════════════════════════════════════════════╝
+Usage: ./netintel.sh [-u domain.com]
 
-                                    Options:
-                                      -u <domain>     Specify the domain to scan
-                                      -h, --help      Show this help message and exit
+Options:
+-u <domain>     Specify the domain to scan
+-h, --help      Show this help message and exit
     
 - 🌐 **Domain to IP** Resolution  
 - 🛰️ **ASN Lookup** (via RADb + fallback to BGPView)  
