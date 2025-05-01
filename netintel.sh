@@ -26,7 +26,7 @@ cat << "EOF"
 EOF
 echo "╔══════════════════════════════════════════════════╗"
 echo "║         🔐 NetIntel Security Suite™              ║"
-echo "║      Developed by Ahmed Ibrahim | v1.3           ║"
+echo "║      Developed by Ahmed Ibrahim | v1.2           ║"
 echo "║       Domain → IP → ASN → CIDRs → PTR            ║"
 echo "╚══════════════════════════════════════════════════╝"
 echo -e "${NC}"
