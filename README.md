@@ -1,7 +1,7 @@
 # 🔐 NetIntel Security Suite™
 
 > Developed by **Ahmed Ibrahim** – Cybersecurity Developer  
-> Version: `v1.0`
+> Version: `v1.2`
 
 NetIntel is a Bash-based tool designed to streamline network intelligence gathering. Starting with a domain, it automatically resolves the IP, extracts ASN information, gathers associated CIDR blocks, performs reverse DNS lookups, and optionally saves the results into a clean report.
 
@@ -52,7 +52,7 @@ chmod +x netintel.sh
 ```
 
 ## 📄 Example Output
-```yaml
+yaml
 🔐 NetIntel Report
 Developed by: Ahmed Ibrahim
 Domain: example.com
