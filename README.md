@@ -33,6 +33,8 @@ NetIntel is a Bash-based tool designed to streamline network intelligence gather
 
 ## 🚀 Usage
 ```bash
+https://github.com/fu44c/netintel.git
+cd netintel
 chmod +x netintel.sh
 ./netintel.sh
 ```
